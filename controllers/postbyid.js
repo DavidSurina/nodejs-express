@@ -1,5 +1,5 @@
 const getPostById = {
-logPostById:(req,res) => res.send("id test")
-}
+  logPostById: (req, res) => res.send('id test'),
+};
 
-module.exports=getPostById;
+module.exports = getPostById;
