@@ -5,6 +5,7 @@ const PostByTopic = require("./routes/postbytopic/index");
 const postById = require("./routes/postbyid/index");
 const postByRating = require("./routes/postbyrating/index");
 const postByTitle = require("./routes/postbytitle/index");
+const postjoin = require("./routes/postjoin/index");
 
 const port = 3000;
 
@@ -14,6 +15,7 @@ app.get("/PostByTopic", PostByTopic);
 app.get("/postbyid",postById);
 app.get("/postbyrating", postByRating);
 app.get("/postbytitle", postByTitle);
+app.get("/postjoin",postjoin);
 
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
