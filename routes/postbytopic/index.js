@@ -3,6 +3,6 @@ const router = express.Router();
 
 const getPostByTopic = require("../../controllers/postByTopic");
 
-router.get("/postbytopic", getPostByTopic.logPostByTopic);
+router.get("/postbytopic/:topic", getPostByTopic.logPostByTopic);
 
 module.exports = router;
