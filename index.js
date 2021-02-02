@@ -20,7 +20,7 @@ const port = 3000;
 
 app.get("/", (req, res) => res.send("11313"));
 app.get("/allposts", allPosts);
-app.get("/PostByTopic", PostByTopic);
+app.get("/PostByTopic/:topic", PostByTopic);
 app.get("/postbyid", postById);
 app.get("/postbyrating", postByRating);
 app.get("/postbytitle", postByTitle);
