@@ -30,13 +30,14 @@ app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
 
-// 1 . Create the get all posts
+// //
+//  1 . Create the get all posts
 
-// SELECT title FROM posts;
+// // SELECT title FROM posts;
 
-// 2. Create the get post  by id
+// // 2. Create the get post  by id
 
-// SELECT * FROM posts where post_id = 2;
+// // SELECT * FROM posts where post_id = 2;
 
 
 // 3. Create the get posts ordered by rating
