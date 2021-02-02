@@ -1,5 +1,12 @@
 const express = require("express");
 const app = express();
+
+const dotenv = require('dotenv');
+//
+dotenv.config();
+
+const pool = require('./dbconfig');
+
 const allPosts = require("./routes/allposts/index");
 const PostByTopic = require("./routes/postbytopic/index");
 const postById = require("./routes/postbyid/index");
