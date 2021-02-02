@@ -2,7 +2,6 @@ const pool = require("../dbconfig");
 
 const getPostByTopic = {
   logPostByTopic: async (req, res) => {
-    const { topic } = req.params;
     try {
       const data = await pool.query(
         "SELECT * FROM posts JOIN topics ON posts.topic_id = topics.topic_id WHERE topic_name LIKE $1",
