@@ -19,7 +19,7 @@ const postjoin = require("./routes/postjoin/index");
 const port = 3000;
 
 app.get("/", (req, res) => res.send("11313"));
-app.get("/allPosts", allPosts);
+app.get("/allposts", allPosts);
 app.get("/PostByTopic", PostByTopic);
 app.get("/postbyid", postById);
 app.get("/postbyrating", postByRating);
