@@ -16,7 +16,8 @@ const postByRating = require("./routes/postbyrating/index");
 const postByTitle = require("./routes/postbytitle/index");
 const postjoin = require("./routes/postjoin/index");
 
-const port = 3000;
+const { PORT } = process.env;
+const port = PORT;
 
 app.get("/", (req, res) => res.send("11313"));
 app.get("/allposts", allPosts);
