@@ -23,7 +23,7 @@ app.get("/allposts", allPosts);
 app.get("/PostByTopic/:topic", PostByTopic);
 app.get("/postbyid", postById);
 app.get("/postbyrating", postByRating);
-app.get("/postbytitle", postByTitle);
+app.get("/postbytitle/:title", postByTitle);
 app.get("/postjoin", postjoin);
 
 app.listen(port, () =>

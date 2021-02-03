@@ -1,7 +1,9 @@
+const pool=require("../dbconfig");
 const getPostByTitle = {
-    logPostByTitle: (req, res) =>{
+    logPostByTitle:async (req, res) =>{
+      const {title}=req.params;
     try {
-      const data = await pool.query("SELECT * FROM posts WHERE title");
+      const data = await pool.query("SELECT * FROM posts WHERE title=$1 ",[title]);
       console.log(data);
         res.json({
         code: 200,
