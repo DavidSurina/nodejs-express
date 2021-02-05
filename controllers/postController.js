@@ -95,7 +95,7 @@ module.exports = {
   getPostByTitle: async (req, res) => {
     const { title } = req.params;
     try {
-      const data = await pool.query("SELECT * FROM posts WHERE title LIKE $1", [
+      const data = await pool.query("SELECT * FROM posts WHERE title=$1", [
         title,
       ]);
       console.log(data);
@@ -103,7 +103,7 @@ module.exports = {
         code: 200,
         operation: "success",
         description: "Fetched specific post by title",
-        data: data.rows[0],
+        data: data.rows,
       });
     } catch (e) {
       console.error(Error(e));
